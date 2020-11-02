@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'dart:ui';
 
+import '../../video_compress.dart';
 import 'compress_mixin.dart';
 
 class ObservableBuilder<T> {

@@ -63,3 +63,8 @@ class MediaInfo {
     return data;
   }
 }
+
+class Subscription {
+  final VoidCallback unsubscribe;
+  const Subscription(this.unsubscribe);
+}
