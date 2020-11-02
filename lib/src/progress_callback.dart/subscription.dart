@@ -2,6 +2,8 @@ import 'dart:async';
 
 import 'dart:ui';
 
+import 'compress_mixin.dart';
+
 class ObservableBuilder<T> {
   StreamController<T> _observable = StreamController();
   bool notSubscribed = true;
@@ -22,9 +24,4 @@ class ObservableBuilder<T> {
       _observable = StreamController();
     });
   }
-}
-
-class Subscription {
-  final VoidCallback unsubscribe;
-  const Subscription(this.unsubscribe);
 }
